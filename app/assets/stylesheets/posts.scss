@@ -117,7 +117,7 @@ header {
 /*ここから新規投稿ページ*/
 
 .form-body {
-  height: 320px;
+  height: 400px;
   margin-top: 10px;
   background-color: #fff;
   border: 1px solid #DCDCDC;
@@ -125,6 +125,17 @@ header {
   border-left: none;
   border-top: none;
   box-shadow: 0 2px 6px #c1ced7;
+}
+
+.form-body input[type="text"] {
+  width: 630px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-right: 35px;
+  border: 1px solid #DCDCDC;
+  font-size: 24px;
+
 }
 
 .form-body textarea {
@@ -142,7 +153,7 @@ header {
   color: #c0c9d1;
 }
 
-.form-body input {
+.form-body input[type="submit"] {
   width: 120px;
   height: 50px;
   color: #fff;
@@ -156,28 +167,6 @@ header {
 }
 
 /*ここから編集ページ*/
-
-.form-body {
-  height: 320px;
-  margin-top: 10px;
-  background-color: #fff;
-  border: 1px solid #DCDCDC;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  box-shadow: 0 2px 6px #c1ced7;
-}
-
-.form-body textarea {
-  resize: none;
-  width: 630px;
-  height: 200px;
-  margin-top: 20px;
-  margin-left: 35px;
-  margin-right: 35px;
-  border: 1px solid #DCDCDC;
-  font-size: 24px;
-}
 
 .form-body textarea::placeholder {
   color: #c0c9d1;
