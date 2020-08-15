@@ -1,17 +1,19 @@
-<div class="main users-new">
+<div class="main">
   <div class="container">
-    <div class="form-heading">新規ユーザー登録</div>
+    <h2 class="form-heading">新規ユーザー登録</h2>
     <div class="form users-form">
-      <div class="form-body">
-        <%= form_tag("/users/create") do %>
-          <p>ユーザー名</p>
-          <input name="name">
-          <p>メールアドレス</p>
-          <input name="email">
-          <p>パスワード</p>
-          <input type="password" name="password">
-          <input type="submit" value="新規登録">
-        <% end %>
+      <div class="register-form-body">
+        <div class="register-form">
+          <%= form_tag("/users/create") do %>
+            <p>ユーザー名</p>
+            <input name="name" style="width: 500px; height: 30px;">
+            <p>メールアドレス</p>
+            <input name="email" style="width: 500px; height: 30px;">
+            <p>パスワード</p>
+            <input type="password" name="password" style="width: 500px; height: 30px;">
+            <input type="submit" value="新規登録">
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

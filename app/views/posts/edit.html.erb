@@ -1,9 +1,9 @@
-<div class="main-posts-edit">
-  <div class="posts-edit-container">
+<div class="main">
+  <div class="container">
     <h2 class="form-heading">編集する</h2>
     <%= form_tag("/posts/#{@post.id}/update") do %>
       <div class="form">
-        <div class="form-bady">
+        <div class="form-body">
           <textarea name="content"><%= @post.content %></textarea>
           <input type="submit" value="編集">
         </div>

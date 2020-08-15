@@ -13,6 +13,23 @@ a {
   text-decoration: none;
 }
 
+.flash {
+  padding-left: 40px;
+}
+
+.main {
+  padding-top: 50px;
+}
+
+.container {
+  width:700px;
+  margin:0 auto;
+}
+
+.container h2 {
+  color: #c7d0d6;
+}
+
 /*ここからheader*/
 
 header {
@@ -50,15 +67,6 @@ header {
 
 /*ここからTopページ*/
 
-.main-posts-index {
-  padding-top: 50px;
-}
-
-.posts-index-container {
-  width:700px;
-  margin:0 auto;
-}
-
 .posts-index-item {
   width: auto; 
   height: auto;
@@ -71,18 +79,20 @@ header {
   border-top:none;
   font-size: 20px;
   box-shadow: 0 2px 6px #c1ced7;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-user-name {
+  width: 100%;
+}
+
+.post-content {
+  width: 100%;
+  margin-top: 8px;
 }
 
 /*ここから詳細ページ*/
-
-.main-posts-show {
-  padding-top: 50px;
-}
-
-.posts-show-container {
-  width: 700px;
-  margin: 0 auto;
-}
 
 .posts-show-item {
   background-color: #fff;
@@ -106,20 +116,7 @@ header {
 
 /*ここから新規投稿ページ*/
 
-.main-posts-new{
-  padding-top: 50px;
-}
-
-.posts-new-container {
-  width: 700px;
-  margin: 0 auto;
-}
-
-.posts-new-container h2 {
-  color: #c7d0d6;
-}
-
-.form-bady {
+.form-body {
   height: 320px;
   margin-top: 10px;
   background-color: #fff;
@@ -130,7 +127,7 @@ header {
   box-shadow: 0 2px 6px #c1ced7;
 }
 
-.form-bady textarea {
+.form-body textarea {
   resize: none;
   width: 630px;
   height: 200px;
@@ -141,11 +138,11 @@ header {
   font-size: 24px;
 }
 
-.form-bady textarea::placeholder {
+.form-body textarea::placeholder {
   color: #c0c9d1;
 }
 
-.form-bady input {
+.form-body input {
   width: 120px;
   height: 50px;
   color: #fff;
@@ -160,20 +157,7 @@ header {
 
 /*ここから編集ページ*/
 
-.main-posts-edit{
-  padding-top: 50px;
-}
-
-.posts-edit-container {
-  width: 700px;
-  margin: 0 auto;
-}
-
-.posts-edit-container h2 {
-  color: #c7d0d6;
-}
-
-.form-bady {
+.form-body {
   height: 320px;
   margin-top: 10px;
   background-color: #fff;
@@ -184,7 +168,7 @@ header {
   box-shadow: 0 2px 6px #c1ced7;
 }
 
-.form-bady textarea {
+.form-body textarea {
   resize: none;
   width: 630px;
   height: 200px;
@@ -195,7 +179,7 @@ header {
   font-size: 24px;
 }
 
-.form-bady textarea::placeholder {
+.form-body textarea::placeholder {
   color: #c0c9d1;
 }
 
@@ -204,4 +188,110 @@ header {
   font-size: 18px;
   color: #8f969c;
 }
+
+/* ここからログイン画面 */
+
+.login-form-body {
+  height: 280px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #DCDCDC;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding-top: 20px;
+}
+
+.login-form {
+  height: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.login-form p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.login-form input {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.login-form input[type="submit"] {
+  width: 120px;
+  height: 50px;
+  color: #fff;
+  background-color: rgb(255, 156, 169);
+  border: none;
+  float: right;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* ここから新規登録画面 */
+
+.register-form-body {
+  height: 360px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #DCDCDC;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding-top: 20px;
+}
+
+.register-form {
+  height: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.register-form p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.register-form input {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.register-form input[type="submit"] {
+  width: 120px;
+  height: 50px;
+  color: #fff;
+  background-color: rgb(255, 156, 169);
+  border: none;
+  float: right;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* ここからユーザー詳細ページ */
+
+.user-show-item {
+  width: auto; 
+  height: auto;
+  display: flex;
+  padding: 1em;
+  margin-bottom: 50px;
+  border:1px solid #DCDCDC;
+  border-right:none;
+  border-left:none;
+  border-top:none;
+  font-size: 20px;
+  box-shadow: 0 2px 6px #c1ced7;
+  display: flex;
+  flex-direction: column;
+}
+
+
 

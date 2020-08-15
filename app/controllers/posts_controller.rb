@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 
   before_action :authenticate_user
+  before_action :ensure_correct_user, {only: [:edit, :update, :destroy]}
 
   def index
     # "Post.all"は全てのPostデータを取り出すコード
@@ -11,7 +12,7 @@ class PostsController < ApplicationController
   def show
     # 投稿データーを取得するコード
     @post = Post.find_by(id: params[:id])
-    @user = User.find_by(id: @post.user_id)
+    @user = @post.user
   end
 
   def new
@@ -47,6 +48,14 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.destroy
     redirect_to("/")
+  end
+
+  def ensure_correct_user
+    @post = Post.find_by(id: params[:id])
+    if @post.user_id != @current_user.id
+      flash[:notice] = "権限がありません"
+      redirect_to("/")
+    end
   end
 
 end
