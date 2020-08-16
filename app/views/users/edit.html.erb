@@ -8,14 +8,15 @@
             <%= message %>
           </div>
         <% end %>
-
-        <%= form_tag("/users/#{@user.id}/update") do %>
-          <p>ユーザー名</p>
-          <input name="name" value="<%= @user.name %>">
-          <p>メールアドレス</p>
-          <input name="email" value="<%= @user.email %>">
-          <input type="submit" value="保存">
-        <% end %>
+        <div class="edit-form">
+          <%= form_tag("/users/#{@user.id}/update") do %>
+            <p>ユーザー名</p>
+            <input name="name" style="width: 500px; height: 30px;" value="<%= @user.name %>">
+            <p>メールアドレス</p>
+            <input name="email" style="width: 500px; height: 30px;" value="<%= @user.email %>">
+            <input type="submit" value="保存">
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

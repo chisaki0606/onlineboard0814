@@ -83,13 +83,21 @@ header {
   flex-direction: column;
 }
 
-.post-user-name {
+.post-title {
   width: 100%;
+  margin-top: 8px;
 }
 
 .post-content {
   width: 100%;
   margin-top: 8px;
+  font-size: 18px;
+}
+
+.post-user {
+  width: 100%;
+  text-align: right;
+  font-size: 18px;
 }
 
 /*ここから詳細ページ*/
@@ -106,6 +114,23 @@ header {
   border-top: none;
   box-shadow: 0 2px 6px #c1ced7;
   font-size: 26px;
+}
+
+.post-show-title {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.post-show-content {
+  width: 100%;
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+.post-user-name {
+  width: 100%;
+  text-align: right;
+  font-size: 22px;
 }
 
 .post-time {
@@ -264,6 +289,50 @@ header {
   font-size: 18px;
 }
 
+/* ここからユーザー編集ページ */
+
+.edit-form-body {
+  height: 280px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #DCDCDC;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  box-shadow: 0 2px 6px #c1ced7;
+  padding-top: 20px;
+}
+
+.edit-form {
+  height: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.edit-form p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.edit-form input {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.edit-form input[type="submit"] {
+  width: 120px;
+  height: 50px;
+  color: #fff;
+  background-color: rgb(255, 156, 169);
+  border: none;
+  float: right;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+
 /* ここからユーザー詳細ページ */
 
 .user-show-item {
@@ -271,6 +340,7 @@ header {
   height: auto;
   display: flex;
   padding: 1em;
+  margin-top: 10px;
   margin-bottom: 50px;
   border:1px solid #DCDCDC;
   border-right:none;
@@ -281,6 +351,8 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+
 
 
 

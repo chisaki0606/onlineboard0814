@@ -1,10 +1,15 @@
 <div class="main">
   <div class="container">
     <div class="posts-show-item">
-      <div class="post-user-name">
-        <%= link_to(@user.name, "/users/#{@user.id}") %>
+      <div class="post-show-title">
+        <%= @post.title %>
       </div>
+      <div class="post-show-content">
         <%= @post.content %>
+      </div>
+      <div class="post-user-name">
+        by <%= link_to(@user.name, "/users/#{@user.id}") %>
+      </div>
       <div class="post-time">
         <%= @post.created_at %>
       </div>
