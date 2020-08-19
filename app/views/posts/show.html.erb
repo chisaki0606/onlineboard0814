@@ -1,5 +1,7 @@
 <div class="main">
   <div class="container">
+
+
     <div class="posts-show-item">
       <div class="post-show-title">
         <%= @post.title %>
@@ -20,5 +22,25 @@
         </div>
       <% end %>
     </div>
+
+    <div class="users-comment-list">
+      <% @comments.each do |comment| %>
+        <%= comment.user_content %>
+      <% end %>
+    </div>
+
+
+
+    <div class="user-comment">
+      <h2 class="form-heading">こちらにコメントを書いてください</h2>
+        <div class="form-body">
+          <textarea name="user_content" placeholder="こちらにコメントを書いてください"></textarea>
+          <input type="submit" value="投稿">
+        </div>
+    </div>
+
+
+
+
   </div>
 </div>

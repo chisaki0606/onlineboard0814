@@ -13,6 +13,8 @@ class PostsController < ApplicationController
     # 投稿データーを取得するコード
     @post = Post.find_by(id: params[:id])
     @user = @post.user
+
+    @comments = Comment.all
   end
 
   def new
