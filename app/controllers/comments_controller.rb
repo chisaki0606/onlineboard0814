@@ -4,7 +4,10 @@ class CommentsController < ApplicationController
   end
 
   def create
-    @comment = Comment.new(user_content: params[:user_content])            
+    @comment = Comment.new(
+      user_content: params[:user_content],
+      user_id: @current_user.id
+      )            
     @comment.save
     redirect_to("/comments/index")
   end

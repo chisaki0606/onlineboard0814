@@ -6,7 +6,7 @@
           <%= link_to(post.title, "posts/#{post.id}") %>
         </div>
         <div class="post-content">
-          <%= post.content %>
+          <%= post.content.truncate(60) %>
         </div>
         <div class="post-user">
           by <%= link_to(post.user.name, "/users/#{post.user.id}") %>
