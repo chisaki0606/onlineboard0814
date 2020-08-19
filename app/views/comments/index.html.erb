@@ -1,0 +1,18 @@
+    <div class="users-comment-list">
+      <% @comments.each do |comment| %>
+        <div class="comment">
+          <%= comment.user_content %>
+        </div>
+      <% end %>
+    </div>
+
+    <%= form_tag("/comments/create") do %>
+      <div class="user-comment">
+        <textarea name="user_content" placeholder="こちらにコメントを書いてください"></textarea>
+        <input type="submit" value="投稿">
+      </div>
+    <% end %>
+
+
+
+

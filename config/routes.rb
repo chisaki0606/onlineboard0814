@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get "comments/index" => "comments#index"
+  post "comments/create" => "comments#create"
+
   get "login" => "users#login_form"
   post "login" => "users#login"
 
