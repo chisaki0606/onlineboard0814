@@ -9,6 +9,10 @@ html {
   letter-spacing: 1px;
 }
 
+body {
+  background-color: #DAE0E5;
+}
+
 a { 
   text-decoration: none;
 }
@@ -33,19 +37,19 @@ a {
 /*ここからheader*/
 
 header {
-  background-color: rgb(255, 156, 169);
-  height: 70px;
+  height: 100px;
   width: auto;
+  background-color: #fff;
 }
 
 .header-logo {
   float: left;
   font-family: 'arial black';
-  padding: 12px 0px 0px 40px; 
+  padding: 30px 0px 0px 40px; 
 }
 
 .header-logo a {
-  color: #fff;
+  color: #202f55;
   font-size: 24px;
 }
 
@@ -57,12 +61,12 @@ header {
   list-style: none;
   float: left;
   font-size: 18px;
-  padding: 20px 40px 0px 0px; 
+  padding: 36px 40px 0px 0px; 
 }
 
 .header-menus a{
   text-decoration: none;
-  color: #fff;
+  color: #202f55;
 }
 
 /*ここからTopページ*/
@@ -81,6 +85,8 @@ header {
   box-shadow: 0 2px 6px #c1ced7;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+
 }
 
 .post-title {
@@ -181,6 +187,7 @@ header {
 .form-body textarea::placeholder {
   color: #c0c9d1;
 }
+
 
 .form-body input[type="submit"] {
   width: 120px;
