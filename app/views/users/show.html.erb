@@ -15,7 +15,7 @@
         <% @user.posts.each do |post| %>
           <div class="posts-index-item">
             <div class="post-title">
-              <%= link_to(post.title, "posts/#{post.id}") %>
+              <%= link_to(post.title, "/posts/#{post.id}") %>
             </div>
             <div class="post-content">
               <%= post.content %>

@@ -30,8 +30,12 @@ a {
   margin:0 auto;
 }
 
-.container h2 {
-  color: #c7d0d6;
+.form-heading {
+  color: #fff;
+  background-color: #2C3C69;
+  padding-top: 6px; 
+  padding-bottom: 6px; 
+  padding-left: 1em;
 }
 
 /*ここからheader*/
@@ -45,12 +49,12 @@ header {
 .header-logo {
   float: left;
   font-family: 'arial black';
-  padding: 30px 0px 0px 40px; 
+  padding: 24px 0px 0px 40px; 
 }
 
 .header-logo a {
-  color: #202f55;
-  font-size: 24px;
+  color: #2C3C69;
+  font-size: 30px;
 }
 
 .header-menus {
@@ -66,7 +70,7 @@ header {
 
 .header-menus a{
   text-decoration: none;
-  color: #202f55;
+  color: #2C3C69;
 }
 
 /*ここからTopページ*/
@@ -82,11 +86,9 @@ header {
   border-left:none;
   border-top:none;
   font-size: 20px;
-  box-shadow: 0 2px 6px #c1ced7;
   display: flex;
   flex-direction: column;
   background-color: #fff;
-
 }
 
 .post-title {
@@ -109,9 +111,9 @@ header {
 /*ここから詳細ページ*/
 
 .posts-show-item {
-  background-color: #fff;
   width: auto;
   height: auto;
+  background-color: #fff;
   padding: 1.5em;
   margin: 1em 0;
   border: 1px solid #DCDCDC;
@@ -125,11 +127,16 @@ header {
 .post-show-title {
   width: 100%;
   margin-top: 8px;
+  padding-left: 10px;
+  color: #fff;
+  background-color: #2C3C69;
 }
+
+
 
 .post-show-content {
   width: 100%;
-  margin-top: 8px;
+  margin-top: 14px;
   font-size: 24px;
 }
 
@@ -149,7 +156,6 @@ header {
 
 .form-body {
   height: 400px;
-  margin-top: 10px;
   background-color: #fff;
   border: 1px solid #DCDCDC;
   border-right: none;
@@ -166,7 +172,7 @@ header {
   margin-right: 35px;
   border: 1px solid #DCDCDC;
   font-size: 24px;
-
+  text-indent: 10px;
 }
 
 .form-body textarea {
@@ -178,6 +184,9 @@ header {
   margin-right: 35px;
   border: 1px solid #DCDCDC;
   font-size: 24px;
+  padding-right: 10px;
+  padding-left: 10px;
+
 }
 
 .form-body input::placeholder {
@@ -193,7 +202,7 @@ header {
   width: 120px;
   height: 50px;
   color: #fff;
-  background-color: rgb(255, 156, 169);
+  background-color: #2C3C69;
   border: none;
   float: right;
   border-radius: 8px;
@@ -218,7 +227,6 @@ header {
 
 .login-form-body {
   height: 280px;
-  margin-top: 10px;
   background-color: #fff;
   border: 1px solid #DCDCDC;
   border-right: none;
@@ -243,25 +251,27 @@ header {
 .login-form input {
   margin-top: 10px;
   font-size: 20px;
+  text-indent: 10px;
 }
 
 .login-form input[type="submit"] {
   width: 120px;
   height: 50px;
   color: #fff;
-  background-color: rgb(255, 156, 169);
+  background-color: #2C3C69;
   border: none;
   float: right;
   border-radius: 8px;
   margin-top: 20px;
   font-size: 18px;
+  text-indent: 0px;
+
 }
 
 /* ここから新規登録画面 */
 
 .register-form-body {
   height: 360px;
-  margin-top: 10px;
   background-color: #fff;
   border: 1px solid #DCDCDC;
   border-right: none;
@@ -286,25 +296,26 @@ header {
 .register-form input {
   margin-top: 10px;
   font-size: 20px;
+  text-indent: 10px;
 }
 
 .register-form input[type="submit"] {
   width: 120px;
   height: 50px;
   color: #fff;
-  background-color: rgb(255, 156, 169);
+  background-color: #2C3C69;
   border: none;
   float: right;
   border-radius: 8px;
   margin-top: 20px;
   font-size: 18px;
+  text-indent: 0px;
 }
 
 /* ここからユーザー編集ページ */
 
 .edit-form-body {
   height: 280px;
-  margin-top: 10px;
   background-color: #fff;
   border: 1px solid #DCDCDC;
   border-right: none;
@@ -329,18 +340,20 @@ header {
 .edit-form input {
   margin-top: 10px;
   font-size: 20px;
+  text-indent: 10px;
 }
 
 .edit-form input[type="submit"] {
   width: 120px;
   height: 50px;
   color: #fff;
-  background-color: rgb(255, 156, 169);
+  background-color: #2C3C69;
   border: none;
   float: right;
   border-radius: 8px;
   margin-top: 20px;
   font-size: 18px;
+  text-indent: 0px;
 }
 
 
@@ -349,9 +362,9 @@ header {
 .user-show-item {
   width: auto; 
   height: auto;
+  background-color: #fff;
   display: flex;
   padding: 1em;
-  margin-top: 10px;
   margin-bottom: 50px;
   border:1px solid #DCDCDC;
   border-right:none;
